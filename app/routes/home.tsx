@@ -1,9 +1,9 @@
-import ThemeToggler from "~/components/ui/ThemeToggler";
+import ThemeToggler from "~/components/component/ThemeToggler";
 import type { Route } from "./+types/home";
 import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
-import { ThemeProvider } from "~/components/ui/ThemeContext";
-import Logo from "~/components/ui/Logo";
+import { ThemeProvider } from "~/components/component/ThemeContext";
+import Logo from "~/components/component/Logo";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -22,16 +22,12 @@ export default function Home() {
             <span>Learningo App</span>
           </div>
           <div className="flex flex-col gap-4">
-            <Button>
-              <Link to="/auth" className="text-xl">
-                Login
-              </Link>
-            </Button>
-            <Button>
-              <Link to="/auth/register" className="text-xl">
-                Register
-              </Link>
-            </Button>
+            <Link to="/auth" className="text-xl w-24">
+              <Button className="w-full">Login</Button>
+            </Link>
+            <Link to="/auth/register" className="text-xl w-24">
+              <Button className="w-full">Register</Button>
+            </Link>
             <ThemeToggler className="" />
           </div>
         </div>

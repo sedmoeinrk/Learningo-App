@@ -12,7 +12,7 @@ const Logo: React.FC<Props> = props => {
       <div className={`${props.className}`}>
         <img
           src={`
-        ${theme === "dark" ? "/images/Logo-dark.svg" : "/images/Logo.svg"}`}
+        ${theme !== "light" ? "/images/Logo-dark.svg" : "/images/Logo.svg"}`}
           alt="logo here"
         />
       </div>

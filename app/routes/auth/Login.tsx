@@ -51,8 +51,8 @@ const Login: React.FC = () => {
     <>
       <div className="flex w-full flex-col">
         <h2 className="text-3xl font-semibold">Hey, Hello 👋</h2>
-        <p className="mb-20">Enter your email and password to login.</p>
-        <h2 className="py-5 text-2xl font-semibold text-secondary-foreground md:hidden">
+        <p className="mb-10">Enter your email and password to login.</p>
+        <h2 className=" text-2xl font-semibold text-secondary-foreground md:hidden">
           Login
         </h2>
 
@@ -116,14 +116,11 @@ const Login: React.FC = () => {
               )}
             />
             <div className="flex flex-row-reverse gap-4">
-              <Button variant="link" type="submit" className="w-full">
-                Sign up
+              <Button variant="default" type="submit" className="w-full">
+                <Link to="/auth/signup">Sign up</Link>
               </Button>
-              <Button
-                variant="ig"
-                type="submit"
-                className="w-full hover:opacity-95"
-              >
+
+              <Button variant="ig" type="submit" className="w-full">
                 Login
               </Button>
             </div>

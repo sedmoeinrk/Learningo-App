@@ -1,12 +1,12 @@
 import { Outlet } from "react-router";
-import Logo from "../../components/ui/Logo";
-import ThemeToggler from "~/components/ui/ThemeToggler";
-import { ThemeProvider } from "~/components/ui/ThemeContext";
+import Logo from "../../components/component/Logo";
+import ThemeToggler from "~/components/component/ThemeToggler";
+import { ThemeProvider } from "~/components/component/ThemeContext";
 
 const Layout: React.FC = () => {
   return (
     <ThemeProvider>
-      <div className="realtive flex h-screen w-full flex-row">
+      <div className="realtive flex h-screen w-full flex-row overflow-hidden">
         <div className="bg-[url('/images/mobile-bg.png')] fixed inset-0 z-0 flex h-full items-center justify-center bg-cover bg-center md:bg-[url('/images/bg.png')] md:static md:grow">
           <div className="hidden h-2/3 w-2/3 flex-col items-start justify-center gap-7 bg-white/30 md:flex lg:pl-20 pl-16">
             <div className="flex flex-col items-start gap-3 font-semibold lg:text-5xl text-4xl text-white">
