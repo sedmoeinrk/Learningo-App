@@ -1,9 +1,9 @@
-import ThemeToggler from "~/components/component/ThemeToggler";
+import ThemeToggler from "~/components/ThemeToggler";
 import type { Route } from "./+types/home";
 import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
-import { ThemeProvider } from "~/components/component/ThemeContext";
-import Logo from "~/components/component/Logo";
+import { ThemeProvider } from "~/providers/theme";
+import Logo from "~/components/Logo";
 
 export function meta({}: Route.MetaArgs) {
   return [

@@ -4,15 +4,15 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
-import { Button } from "../ui/button";
+} from "./ui/dropdown-menu";
+import { Button } from "./ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLightbulb,
   faMoon,
   faLaptop,
 } from "@fortawesome/free-solid-svg-icons";
-import { ThemeProvider, useTheme } from "./ThemeContext";
+import { ThemeProvider, useTheme } from "../providers/theme";
 
 interface Props {
   className: string;

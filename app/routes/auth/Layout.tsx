@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
-import Logo from "../../components/component/Logo";
-import ThemeToggler from "~/components/component/ThemeToggler";
-import { ThemeProvider } from "~/components/component/ThemeContext";
+import Logo from "../../components/Logo";
+import ThemeToggler from "~/components/ThemeToggler";
+import { ThemeProvider } from "~/providers/theme";
 
 const Layout: React.FC = () => {
   return (
